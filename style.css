@@ -1,0 +1,144 @@
+body {
+  font-family: 'Cera Pro';
+  font-size: 18px;
+  line-height: 135%;
+  margin: 0;
+  padding: 0;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+h1 {
+  font-size: 52px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+h1,
+h2 {
+  border-bottom: 2px solid rgb(37, 139, 255);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  color: rgb(37, 139, 255);
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li::before {
+  content: '– ';
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: transparent;
+  margin-bottom: 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+.flex {
+  display: flex;
+}
+
+#bio>.flex {
+  column-gap: 24px;
+}
+
+#bio .myPhoto {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.14);
+  margin-bottom: 24px;
+}
+
+#bio .contacts {
+  column-gap: 18px;
+}
+
+#bio .contacts img {
+  width: calc((200px - 18px * (4 - 1)) / 4);
+  border-radius: 10px;
+}
+
+.bio .label {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: .7em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.bio .row {
+  margin-bottom: 12px;
+}
+
+.bio .row:last-child {
+  margin-bottom: 0px;
+}
+
+.bio .value {
+  font-weight: 500;
+}
+
+.bio .value.aboutMe {
+  font-weight: normal;
+  font-size: .9em;
+}
+
+#targets li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#targets li:last-child {
+  margin-bottom: 0;
+}
+
+#targets li:hover {
+  background-color: rgb(64, 166, 63);
+  color: #fff;
+  cursor: default;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align-last: left;
+  font-weight: 500;
+  /* border-bottom: 1.5px solid rgba(0, 0, 0, 0.2); */
+}
+
+tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+td {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* td:first-child {
+  color: #000;
+} */
